@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<style>
+    body {
+        margin: 0;
+        padding:0;
+    }
+    
+    #main {
+        position:absolute;
+        height:400px;
+        width: 600px;
+        margin: auto;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background-color: white;
+        animation-name: backdiv;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+    
+    .container {
+        font-family: monospace, helvetica;
+    }
+    
+    #left {
+        position:absolute;
+        padding:0;
+        color: white;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        top: 0;
+        right: 300px;
+        bottom: 230px;
+        left: 0;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    #right {
+        position:absolute;
+        color: white;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        top: 0;
+        left: 300px;
+        bottom: 230px;
+        right: 0;
+        text-align: center;
+        font-size: 50px;
+    }
+        
+
+    #travel {
+        position:absolute;
+        padding:0;
+        color: white;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        top: 160px;
+        right: 265px;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        font-size: 100px;
+    }
+    
+    
+        
+      
+    
+    .heart {
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+        
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    bottom:80px;
+    right:0;
+    
+    margin: auto;
+  
+    transform:rotate(-45deg);
+        
+    animation-name: heart-beat;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    }
+    
+    .heart:after {
+        content: "";
+        height: 50px;
+        width: 50px;
+        background-color: pink;
+        border-radius: 50%;
+        
+        position:absolute;
+        top: 0;
+        left: 25px;
+    }
+    
+    .heart:before {
+        content: "";
+        height: 50px;
+        width: 50px;
+        background-color: pink;
+        border-radius: 50%;
+        
+        position:absolute;
+        bottom: 25px;
+        left: 0;
+    }
+    
+    .heart-white {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+        
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    bottom:80px;
+    right:0;
+    
+    margin: auto;
+  
+    transform:rotate(-45deg);
+        
+    animation-name: heart-beat;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    }
+    
+    .heart-white:after {
+        content: "";
+        height: 60px;
+        width: 60px;
+        background-color: white;
+        border-radius: 50%;
+        
+        position:absolute;
+        top: 0;
+        left: 25px;
+    }
+    
+    .heart-white:before {
+        content: "";
+        height: 60px;
+        width: 60px;
+        background-color: white;
+        border-radius: 50%;
+        
+        position:absolute;
+        bottom: 25px;
+        left: 0;
+    }
+    
+    @keyframes backdiv {
+        
+        50% {
+            background-color: hsl(0, 50%, 90%);
+        }
+    }
+    
+    @keyframes heart-beat {
+        0% {
+            transform: scale(1) rotate(-45deg);
+        }
+        50% {
+            transform: scale(1.5) rotate(-45deg);
+        }
+        100% {
+            transform: scale(1) rotate(-45deg)
+        }
+    }
+</style>
+
+<div id="main">
+    <div class="back"></div>
+
+        <div class="container" id="left">
+            <h1 id="I">I</h1>
+        </div>
+
+        <div class="container" id="right">
+            <h1 id="U">2</h1> 
+        </div>
+    
+        <div class= "container" id="travel">TRAVEL</div>
+
+    <div class="heart-white"></div>
+
+    <div class="heart"></div>
+    
+</div>
